@@ -1,0 +1,57 @@
+/* Lettertypes */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  background-color: #0F172A;
+  padding: 10px 0;
+}
+
+/* Container zorgt dat alles mooi naast elkaar staat */
+.header-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Navigatie rechts */
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #C6A75E;
+}
+
+/* Actieve pagina */
+nav a.active {
+  color: white;
+  border-bottom: 2px solid #C6A75E;
+  padding-bottom: 4px;
+}
+
+/* Logo container */
+.logo img {
+  width: 50px;        /* grootte van je foto */
+  height: 50px;
+  object-fit: cover;  /* voorkomt vervorming */
+  border-radius: 50%; /* maakt hem rond */
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+/* Optioneel: kleine hover effect */
+.logo img:hover {
+  border: 2px solid #C6A75E;
+  transition: 0.3s ease;
+}
