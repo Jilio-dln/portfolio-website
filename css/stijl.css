@@ -53,5 +53,83 @@ nav a.active {
 /* Optioneel: kleine hover effect */
 .logo img:hover {
   border: 2px solid #C6A75E;
-  transition: 0.3s ease;
+}
+
+/* HERO: full screen foto */
+.hero {
+  height: 90vh;                       /* hele schermhoogte */
+  background-image: url(../img/f1.png);
+  background-size: cover;              /* vult het scherm */
+  background-position: center;         /* focus in midden */
+  position: relative;
+}
+
+/* Donkerblauwe overlay (voor luxe look + leesbaarheid tekst) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;                            /* top/right/bottom/left: 0 */
+  background-color: rgba(15, 23, 42, 0.75);  /* donkerblauw transparant */
+}
+
+/* Tekst boven de overlay */
+.hero-content {
+  position: relative;                  /* zodat tekst boven overlay komt */
+  max-width: 900px;
+  padding: 0 40px;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Tekst styling */
+.hero-subtitle {
+  margin: 0 0 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-title {
+  margin: 0 0 12px;
+  font-size: 56px;
+  line-height: 1.1;
+}
+
+.hero-text {
+  margin: 0 0 22px;
+  max-width: 55ch;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Knoppen (simpel maar netjes) */
+.hero-buttons a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: rgba(198, 167, 94, 0.18); /* goud accent */
+  border: 1px solid rgba(198, 167, 94, 0.45);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: rgba(198, 167, 94, 0.28);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.btn-outline:hover {
+  border-color: rgba(198, 167, 94, 0.6);
+  color: #C6A75E;
 }
