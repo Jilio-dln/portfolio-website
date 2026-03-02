@@ -2,11 +2,17 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+  
 }
 
 header {
-  background-color: #0F172A;
+ background-color: #0C1425;
   padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  
 }
 
 /* Container zorgt dat alles mooi naast elkaar staat */
@@ -16,6 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 
@@ -27,6 +34,7 @@ nav a {
   font-size: 15px;
   font-weight: 500;
   transition: 0.3s ease;
+  
 }
 
 /* Hover effect */
@@ -133,3 +141,367 @@ nav a.active {
   border-color: rgba(198, 167, 94, 0.6);
   color: #C6A75E;
 }
+
+/* 4 gelijke boxen in een grid */
+.info-grid{
+  list-style: none;
+  padding: 60px 10%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 kolommen */
+  gap: 30px;
+  background-color: #0F172A;
+}
+
+/* elke box */
+.box{
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 28px;
+  min-height: 180px; /* zorgt dat ze visueel gelijk lijken */
+}
+
+/* titels */
+.box h2{
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: white;
+}
+
+/* tekst */
+.box p{
+  margin-top: 0;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.6;
+}
+
+/* lijst in sterktes */
+.punten{
+  margin: 0;
+  padding-left: 18px;
+}
+.punten li{
+  margin-bottom: 8px;
+  color: rgba(255,255,255,0.82);
+}
+
+/* KNOPPEN */
+.knop{
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid #C6A75E;
+  color: #C6A75E;
+}
+.knop:hover{
+  background-color: #C6A75E;
+  color: #0F172A;
+}
+
+/*BEGIN FOOTER*/ 
+.footer{
+  background-color: #0C1425;
+  padding: 25px 10%;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-naam{
+  margin: 0;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+
+.footer-socials img{
+  width: 22px;
+  height: 22px;
+  margin-left: 15px;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.footer-socials img:hover{
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.footer-socials a {
+  text-decoration: none;
+}
+/*EINDE FOOTER */
+
+
+/* CV CSS */
+
+.cv{
+  padding: 60px 10%;
+  background-color: #0F172A;
+  color: white;
+}
+
+.cv h1{
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.cv-intro{
+  color: rgba(255,255,255,0.8);
+  max-width: 70ch;
+}
+
+.cv-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 30px 0 40px;
+}
+
+.cv-blok{
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.cv-blok p{
+  margin: 8px 0;
+  color: rgba(255,255,255,0.82);
+}
+
+/* Tabel */
+.cv-tabel{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  background-color: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.cv-tabel caption{
+  caption-side: bottom;
+  padding: 10px;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+
+.cv-tabel th,
+.cv-tabel td{
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 12px;
+  text-align: left;
+}
+
+.cv-tabel th{
+  color: white;
+  background-color: rgba(255,255,255,0.06);
+}
+.cv-download{
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #C6A75E;
+  color: #0F172A;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cv-download:hover{
+  opacity: 0.70;
+}
+
+.mail-link{
+  color: #C6A75E;
+  text-decoration: none;
+}
+
+.mail-link:hover{
+  text-decoration: underline;
+}
+
+
+.werk-item{
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+}
+
+.werk-item h3{
+  margin: 0 0 6px 0;
+}
+
+.periode{
+  font-size: 14px;
+  color: #C6A75E;
+  margin: 0 0 12px 0;
+}
+
+.werk-item p{
+  color: rgba(255,255,255,0.82);
+}
+
+.werk-item ul{
+  padding-left: 18px;
+}
+/* CV CSS */
+
+/*PROJECTEN*/
+
+.projects-page{
+  padding: 60px 10%;
+  background-color: #0F172A;
+  color: white;
+}
+
+.projects-page h1{
+  margin-top: 0;
+  font-size: 44px;
+}
+
+.projects-intro{
+  color: rgba(255,255,255,0.82);
+  max-width: 75ch;
+  margin-bottom: 10px;
+}
+
+/* Project blok */
+.project-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 70px 10%;
+  background-color: #0F172A;
+  color: white;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* omdraaien voor afwisseling */
+.project-item.reverse{
+  flex-direction: row-reverse;
+}
+
+.project-text{
+  flex: 1;
+}
+
+.project-text h2{
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.project-meta{
+  color: #C6A75E;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.project-text p{
+  color: rgba(255,255,255,0.82);
+  line-height: 1.6;
+}
+
+.project-text ul{
+  padding-left: 18px;
+}
+
+.project-text li{
+  margin-bottom: 8px;
+  color: rgba(255,255,255,0.82);
+}
+
+/* Afbeelding */
+.project-image{
+  flex: 1;
+}
+
+.project-image img{
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* Knoppen */
+.project-buttons{
+  margin-top: 20px;
+}
+
+.btn-project{
+  background-color: #C6A75E;
+  color: #0F172A;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.btn-project:hover{
+  opacity: 0.9;
+}
+
+.btn-project-outline{
+  border: 1px solid #C6A75E;
+  color: #C6A75E;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-project-outline:hover{
+  background-color: #C6A75E;
+  color: #0F172A;
+}
+
+.projects-hero{
+  position: relative;
+  height: 40vh;
+  background-image: url("../img/intro-banner.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Donkere overlay */
+.projects-hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.804); /* donkerblauw overlay */
+}
+
+/* Tekst boven overlay */
+.projects-hero-content{
+  position: relative;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.projects-hero h1{
+  margin: 0 0 10px;
+  font-size: 38px;
+}
+
+.projects-hero p{
+  margin: 0;
+  color: rgba(255,255,255,0.85);
+}
+/*PROJECTEN*/
+
