@@ -10,9 +10,8 @@ header {
   padding: 10px 0;
   position: sticky;
   top: 0;
-  z-index: 1000;
   border-bottom: 1px solid rgba(255,255,255,0.08);
-  
+  z-index: 1000;
 }
 
 /* Container zorgt dat alles mooi naast elkaar staat */
@@ -80,7 +79,6 @@ nav a.active {
   background-color: rgba(15, 23, 42, 0.75);  /* donkerblauw transparant */
 }
 
-/* Tekst boven de overlay */
 .hero-content {
   position: relative;                  /* zodat tekst boven overlay komt */
   max-width: 900px;
@@ -90,7 +88,6 @@ nav a.active {
   transform: translateY(-50%);
 }
 
-/* Tekst styling */
 .hero-subtitle {
   margin: 0 0 10px;
   letter-spacing: 2px;
@@ -112,7 +109,6 @@ nav a.active {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Knoppen (simpel maar netjes) */
 .hero-buttons a {
   display: inline-block;
   text-decoration: none;
@@ -142,7 +138,6 @@ nav a.active {
   color: #C6A75E;
 }
 
-/* 4 gelijke boxen in een grid */
 .info-grid{
   list-style: none;
   padding: 60px 10%;
@@ -153,7 +148,6 @@ nav a.active {
   background-color: #0F172A;
 }
 
-/* elke box */
 .box{
   background-color: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.10);
@@ -162,7 +156,6 @@ nav a.active {
   min-height: 180px; /* zorgt dat ze visueel gelijk lijken */
 }
 
-/* titels */
 .box h2{
   margin-top: 0;
   margin-bottom: 12px;
@@ -170,14 +163,12 @@ nav a.active {
   color: white;
 }
 
-/* tekst */
 .box p{
   margin-top: 0;
   color: rgba(255,255,255,0.82);
   line-height: 1.6;
 }
 
-/* lijst in sterktes */
 .punten{
   margin: 0;
   padding-left: 18px;
@@ -187,7 +178,6 @@ nav a.active {
   color: rgba(255,255,255,0.82);
 }
 
-/* KNOPPEN */
 .knop{
   display: inline-block;
   margin-top: 14px;
@@ -242,7 +232,6 @@ nav a.active {
 
 
 /* CV CSS */
-
 .cv{
   padding: 60px 10%;
   background-color: #0F172A;
@@ -278,7 +267,6 @@ nav a.active {
   color: rgba(255,255,255,0.82);
 }
 
-/* Tabel */
 .cv-tabel{
   width: 100%;
   border-collapse: collapse;
@@ -329,7 +317,6 @@ nav a.active {
   text-decoration: underline;
 }
 
-
 .werk-item{
   margin-bottom: 40px;
   padding: 20px;
@@ -358,7 +345,6 @@ nav a.active {
 /* CV CSS */
 
 /*PROJECTEN*/
-
 .projects-page{
   padding: 60px 10%;
   background-color: #0F172A;
@@ -376,7 +362,6 @@ nav a.active {
   margin-bottom: 10px;
 }
 
-/* Project blok */
 .project-item{
   display: flex;
   align-items: center;
@@ -388,7 +373,6 @@ nav a.active {
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
-/* omdraaien voor afwisseling */
 .project-item.reverse{
   flex-direction: row-reverse;
 }
@@ -422,18 +406,16 @@ nav a.active {
   color: rgba(255,255,255,0.82);
 }
 
-/* Afbeelding */
 .project-image{
   flex: 1;
 }
 
 .project-image img{
-  width: 100%;
+  width: 80%;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.10);
 }
 
-/* Knoppen */
 .project-buttons{
   margin-top: 20px;
 }
@@ -478,7 +460,6 @@ nav a.active {
   text-align: center;
 }
 
-/* Donkere overlay */
 .projects-hero::before{
   content: "";
   position: absolute;
@@ -486,7 +467,6 @@ nav a.active {
   background: rgba(15, 23, 42, 0.804); /* donkerblauw overlay */
 }
 
-/* Tekst boven overlay */
 .projects-hero-content{
   position: relative;
   color: white;
@@ -503,6 +483,8 @@ nav a.active {
   margin: 0;
   color: rgba(255,255,255,0.85);
 }
+
+
 /*PROJECTEN*/
 
 /*Intresses*/
@@ -632,7 +614,6 @@ nav a.active {
   background-color: rgba(255,255,255,0.06);
 }
 
-
 .extra-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -753,7 +734,6 @@ border: #C6A75E solid 1px;
   color: rgba(255,255,255,0.70);
 }
 
-/* formulier */
 .form-groep{
   margin-bottom: 18px;
 }
@@ -801,18 +781,10 @@ border: #C6A75E solid 1px;
   opacity: 0.9;
 }
 
-/* kaart */
 .map-container{
   margin-top: 15px;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.10);
-}
-
-/* mobiel */
-@media (max-width: 900px){
-  .contact-grid{
-    grid-template-columns: 1fr;
-  }
 }
 /*contact*/
