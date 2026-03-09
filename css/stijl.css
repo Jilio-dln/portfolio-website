@@ -505,3 +505,255 @@ nav a.active {
 }
 /*PROJECTEN*/
 
+/*Intresses*/
+.interesses-hero{
+  position: relative;
+  height: 40vh;
+  background-image: url("../img/interesses-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.interesses-hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+}
+
+.interesses-hero-content{
+  position: relative;
+  color: white;
+  padding: 0 20px;
+}
+
+.interesses-hero h1{
+  margin: 0 0 10px;
+  font-size: 38px;
+}
+
+.interesses-hero p{
+  margin: 0;
+  color: rgba(255,255,255,0.85);
+}
+
+.interesses-content{
+  padding: 60px 10%;
+  background-color: #0F172A;
+  color: white;
+}
+
+.interesse-blok{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+
+.interesse-blok.reverse{
+  flex-direction: row-reverse;
+}
+
+.interesse-tekst{
+  flex: 1;
+}
+
+.interesse-tekst h2{
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.interesse-tekst p{
+  color: rgba(255,255,255,0.82);
+  line-height: 1.7;
+}
+
+.interesse-afbeelding{
+  flex: 1;
+  max-width: 75%;
+  height: 350px; /* vaste hoogte */
+}
+
+.interesse-afbeelding img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.persoonlijk-blok{
+  margin-bottom: 60px;
+}
+
+.persoonlijk-blok h2{
+  font-size: 28px;
+}
+
+.persoonlijk-blok p{
+  color: rgba(255,255,255,0.82);
+  line-height: 1.7;
+}
+
+.overzicht-blok h3{
+  margin-bottom: 15px;
+}
+
+.interesses-tabel{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.interesses-tabel caption{
+  caption-side: bottom;
+  padding: 10px;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+
+.interesses-tabel th,
+.interesses-tabel td{
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 12px;
+  text-align: left;
+}
+
+.interesses-tabel th{
+  background-color: rgba(255,255,255,0.06);
+}
+
+@media (max-width: 900px){
+  .interesse-blok,
+  .interesse-blok.reverse{
+    flex-direction: column;
+  }
+}
+/*Intresses*/
+
+
+/*contact*/
+.contact-pagina{
+  padding: 60px 10%;
+  background-color: #0F172A;
+  color: white;
+}
+
+.contact-pagina h1{
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.contact-intro{
+  color: rgba(255,255,255,0.82);
+  max-width: 75ch;
+  margin-bottom: 35px;
+}
+
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-blok,
+.map-blok{
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.contact-blok h2,
+.map-blok h2{
+  margin-top: 0;
+}
+
+.contact-blok p,
+.map-blok p{
+  color: rgba(255,255,255,0.82);
+  line-height: 1.6;
+}
+
+.contact-blok a{
+  color: #C6A75E;
+  text-decoration: none;
+}
+
+.contact-blok a:hover{
+  text-decoration: underline;
+}
+
+.adres-tekst{
+  color: rgba(255,255,255,0.70);
+}
+
+/* formulier */
+.form-groep{
+  margin-bottom: 18px;
+}
+
+.form-groep label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-groep input,
+.form-groep textarea{
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background-color: rgba(255,255,255,0.04);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.form-groep input::placeholder,
+.form-groep textarea::placeholder{
+  color: rgba(255,255,255,0.5);
+}
+
+.form-groep input:focus,
+.form-groep textarea:focus{
+  outline: none;
+  border-color: #C6A75E;
+}
+
+.contact-blok button{
+  background-color: #C6A75E;
+  color: #0F172A;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-blok button:hover{
+  opacity: 0.9;
+}
+
+/* kaart */
+.map-container{
+  margin-top: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* mobiel */
+@media (max-width: 900px){
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+}
+/*contact*/
