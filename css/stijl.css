@@ -22,7 +22,6 @@ header {
 }
 
 /* HEADER CONTAINER */
-
 .header-container {
   width: 90%;
   margin: auto;
@@ -32,7 +31,6 @@ header {
 }
 
 /* NAVIGATIE LINKS */
-
 nav a {
   color: rgba(255,255,255,0.8);
   text-decoration: none;
@@ -43,13 +41,11 @@ nav a {
 }
 
 /* NAV HOVER */
-
 nav a:hover {
   color: #C6A75E;
 }
 
 /* ACTIEVE PAGINA */
-
 nav a.active {
   color: white;
   border-bottom: 2px solid #C6A75E;
@@ -57,7 +53,6 @@ nav a.active {
 }
 
 /* LOGO */
-
 .logo img {
   width: 50px;
   height: 50px;
@@ -84,7 +79,6 @@ nav a.active {
 }
 
 /* HERO OVERLAY */
-
 .hero::before {
   content: "";
   position: absolute;
@@ -93,7 +87,6 @@ nav a.active {
 }
 
 /* HERO CONTENT */
-
 .hero-content {
   position: relative;
   max-width: 900px;
@@ -125,7 +118,6 @@ nav a.active {
 }
 
 /* HERO BUTTONS */
-
 .hero-buttons a {
   display: inline-block;
   text-decoration: none;
@@ -192,7 +184,6 @@ nav a.active {
 }
 
 /* LIJST IN BOX */
-
 .punten{
   margin: 0;
   padding-left: 18px;
@@ -204,7 +195,6 @@ nav a.active {
 }
 
 /* KNOP */
-
 .knop{
   display: inline-block;
   margin-top: 14px;
@@ -284,7 +274,6 @@ nav a.active {
 }
 
 /* GRID */
-
 .cv-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -293,7 +282,6 @@ nav a.active {
 }
 
 /* BLOKKEN */
-
 .cv-blok{
   background-color: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.10);
@@ -307,7 +295,6 @@ nav a.active {
 }
 
 /* CV TABEL */
-
 .cv-tabel{
   width: 100%;
   border-collapse: collapse;
@@ -336,7 +323,6 @@ nav a.active {
 }
 
 /* DOWNLOAD KNOP */
-
 .cv-download{
   display: inline-block;
   padding: 10px 15px;
@@ -352,7 +338,6 @@ nav a.active {
 }
 
 /* MAIL LINK */
-
 .mail-link{
   color: #C6A75E;
   text-decoration: none;
@@ -363,7 +348,6 @@ nav a.active {
 }
 
 /* WERKERVARING BLOK */
-
 .werk-item{
   margin-bottom: 40px;
   padding: 20px;
@@ -413,7 +397,6 @@ nav a.active {
 }
 
 /* PROJECT ITEM */
-
 .project-item{
   display: flex;
   align-items: center;
@@ -463,13 +446,14 @@ nav a.active {
 }
 
 .project-image img{
-  width: 80%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.10);
 }
 
 /* PROJECT BUTTONS */
-
 .project-buttons{
   margin-top: 20px;
 }
@@ -503,7 +487,6 @@ nav a.active {
 }
 
 /* PROJECT HERO */
-
 .projects-hero{
   position: relative;
   height: 40vh;
@@ -544,7 +527,6 @@ nav a.active {
 /* ================================================= */
 
 /* HERO BANNER MET ACHTERGRONDAFBEELDING */
-
 .interesses-hero{
   position: relative;
   height: 40vh;
@@ -558,7 +540,6 @@ nav a.active {
 }
 
 /* DONKERE OVERLAY OVER DE HERO AFBEELDING */
-
 .interesses-hero::before{
   content: "";
   position: absolute;
@@ -567,7 +548,6 @@ nav a.active {
 }
 
 /* TEKST IN DE HERO SECTIE */
-
 .interesses-hero-content{
   position: relative;
   color: white;
@@ -585,7 +565,6 @@ nav a.active {
 }
 
 /* ALGEMENE CONTENT SECTIE VAN DE INTERESSES PAGINA */
-
 .interesses-content{
   padding: 60px 10%;
   background-color: #0F172A;
@@ -593,7 +572,6 @@ nav a.active {
 }
 
 /* BLOK MET TEKST EN AFBEELDING (SPORT / F1) */
-
 .interesse-blok{
   display: flex;
   align-items: center;
@@ -602,13 +580,11 @@ nav a.active {
 }
 
 /* OMGEKEERDE LAYOUT (AFBEELDING LINKS) */
-
 .interesse-blok.reverse{
   flex-direction: row-reverse;
 }
 
 /* TEKSTGEDEELTE VAN HET BLOK */
-
 .interesse-tekst{
   flex: 1;
 }
@@ -624,7 +600,6 @@ nav a.active {
 }
 
 /* AFBEELDING VAN HET BLOK */
-
 .interesse-afbeelding{
   flex: 1;
   max-width: 75%;
@@ -640,7 +615,6 @@ nav a.active {
 }
 
 /* BLOK MET PERSOONLIJKE TEKST */
-
 .persoonlijk-blok{
   margin-bottom: 60px;
 }
@@ -659,7 +633,6 @@ nav a.active {
 }
 
 /* TABEL MET OVERZICHT VAN HOBBY'S */
-
 .overzicht-blok h3{
   margin-bottom: 15px;
 }
@@ -690,7 +663,6 @@ nav a.active {
 }
 
 /* EXTRA BLOKKEN (VRIENDEN / DISCIPLINE) */
-
 .extra-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -718,7 +690,6 @@ nav a.active {
 }
 
 /* BLOK MET PERSOONLIJKE KENMERKEN */
-
 .kenmerken-blok{
   background-color: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
@@ -734,7 +705,6 @@ nav a.active {
 }
 
 /* GRID MET PERSOONLIJKE EIGENSCHAPPEN */
-
 .eigenschappen-grid{
   list-style: none;
   padding: 0;
